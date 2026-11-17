@@ -63,6 +63,8 @@
       {
         "RunKind" : "com.barebones.bblm.predefined-symbol",
         "Keywords" : [
+          "reverse",
+          "trim_right_space",
           "trim_left_space",
           "File_Flags",
           "open",
@@ -300,6 +302,21 @@
           "instrumentation_exit",
           "no_instrumentation"
         ]
+      },
+      {
+        "RunKind" : "com.barebones.bblm.indexed-symbol",
+        "Keywords" : [
+          "fmt",
+          "strings",
+          "os",
+          "mem",
+          "thread",
+          "time",
+          "rand",
+          "strconv",
+          "slice",
+          "runtime"
+        ]
       }
     ],
     "IdentifierAndKeywordCharacterClass" : "A-Za-z0-9_#"
@@ -310,20 +327,20 @@
     "DisplayName" : "Odin",
     "ParserModel" : "auto",
     "CaseSensitive" : true,
-    "BBLMBuildNumber" : 15,
+    "BBLMBuildNumber" : 17,
     "LanguageCode" : "Odin",
     "CommentLineDefault" : "\/\/",
     "BBLMVersionString" : "1.0",
     "AdditionalProperties" : {
-      "BBLMSupportsTextCompletion" : true,
+      "BBLMScansFunctions" : false,
       "BBLMSuffixMap" : [
         {
           "BBLMLanguageSuffix" : ".odin"
         }
       ],
       "BBLMReferenceSearchURLTemplate" : "https:\/\/pkg.odin-lang.org\/?q=*SYMBOLNAME*",
-      "BBLMScansFunctions" : false,
-      "BBLMColorsSyntax" : true
+      "BBLMColorsSyntax" : true,
+      "BBLMSupportsTextCompletion" : true
     },
     "CommentPrefixDefault" : "\/*"
   },

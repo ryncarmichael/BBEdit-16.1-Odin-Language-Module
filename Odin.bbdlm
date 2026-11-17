@@ -1,5 +1,5 @@
 {
-  "BBLMBuildNumber" : 15,
+  "BBLMBuildNumber" : 17,
   "BBLMColorsSyntax" : true,
   "BBLMCommentLineDefault" : "\/\/",
   "BBLMCommentPrefixDefault" : "\/*",
@@ -93,6 +93,8 @@
       },
       {
         "Keywords" : [
+          "reverse",
+          "trim_right_space",
           "trim_left_space",
           "File_Flags",
           "open",
@@ -331,6 +333,21 @@
           "no_instrumentation"
         ],
         "RunKind" : "com.barebones.bblm.predefined-symbol"
+      },
+      {
+        "Keywords" : [
+          "fmt",
+          "strings",
+          "os",
+          "mem",
+          "thread",
+          "time",
+          "rand",
+          "strconv",
+          "slice",
+          "runtime"
+        ],
+        "RunKind" : "com.barebones.bblm.indexed-symbol"
       }
     ],
     "PatternRuns" : [
